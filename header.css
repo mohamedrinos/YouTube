@@ -1,0 +1,225 @@
+.header{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 50;
+    
+}
+
+.left-section{
+    display: flex;
+    width: 300px;
+
+}
+
+.hamburger-image{
+    width: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.youtube-image{
+    width: 90px;
+    height: 24px;
+}
+
+.middle-section{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.search-bar{
+    flex: 1;
+    width: 0;
+    height: 36px;
+    max-width: 350px;
+    font-family: Roboto;
+    padding-left: 12px;
+    font-size: 16px;
+    border: 1px solid rgb(173, 172, 172);
+    border-radius: 2px;
+}
+
+.search-bar::placeholder{
+    color: rgb(173, 172, 172);
+}
+
+.search-bar:focus{
+    border: 1px solid blue;
+    outline: none;
+}
+
+.search-button{
+    height: 40px;
+    width: 64px;
+    border: 1px solid rgb(173, 172, 172);
+    border-radius: 2px;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-hover{
+    font-family: Roboto;
+    font-size: 12px;
+    background-color: rgb(119, 118, 118);
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-button:hover .search-hover{
+    opacity: 1;
+}
+
+
+.voice-button{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.voice-hover{
+    font-family: Roboto;
+    font-size: 12px;
+    background-color: rgb(119, 118, 118);
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.voice-button:hover .voice-hover{
+    opacity: 1;
+}
+
+.search-image{
+    width: 24px;
+    height: 24px;
+}
+
+.voice-image{
+    width: 24px;
+    height: 24px;
+}
+
+.right-section{
+    width: 182px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 29px;
+    margin-right: 24px;
+}
+
+.upload-image, .apps-image, .notification-image{
+    width: 24px;
+}
+
+.my-channel-image{
+    width: 32px;
+    border-radius: 16px;
+}
+
+.upload-box{
+    cursor: pointer;
+    position: relative; 
+}
+
+.upload-hover{
+    font-family: Roboto;
+    font-size: 12px;
+    background-color: rgb(119, 118, 118);
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: -35px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.upload-box:hover .upload-hover{
+    opacity: 1;
+}
+
+.apps-box{
+    cursor: pointer;
+    position: relative; 
+}
+
+.apps-hover{
+    font-family: Roboto;
+    font-size: 12px;
+    background-color: rgb(119, 118, 118);
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: -35px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.apps-box:hover .apps-hover{
+    opacity: 1;
+}
+
+.notification-box{
+    cursor: pointer;
+    position: relative;
+}
+
+.notification-hover{
+    font-family: Roboto;
+    font-size: 12px;
+    background-color: rgb(119, 118, 118);
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+    text-wrap: nowrap;
+    position: absolute;
+    bottom: -35px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.notification-box:hover .notification-hover{
+    opacity: 1;
+}
+
+.notification-count{
+    font-family: Roboto;
+    font-size: 12px;
+    background-color: rgb(172, 9, 9);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+}
